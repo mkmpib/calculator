@@ -1,38 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
-html, body {
-  height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+ body {
+  height: 100vh;
   width: 100%;
-  font-family: 'Roboto', sans-serif; 
-  background-color: rgb(9, 9, 9);
-  color: rgb(231, 19, 19);
-  
+  background:linear-gradient(45deg,#0a0a0a,#3a4452) ;
+ display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container{
-  border: 4px double black;
-  width: 411px;
-  height: 460px;
-  border-radius: 10px;
-  padding: 30px;
-  background-image: linear-gradient(rgb(0, 132, 255),white);
+ border: 1px solid #717377;
+ padding: 20px;
+ border-radius: 16px;
+ background: transparent;
+ box-shadow: 0px 3px 15px  rgba(113,115,119,0.5);
+ 
 }
+.input{
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+ cursor: pointer;
+  font-size: 40px;
+  text-align: right;
+color: aliceblue;
+   box-shadow: 0px 3px 15px  rgba(84,84,84,0.1);
+}
+.input ::placeholder{
+  color:#ffffff;
+  margin-right:5px;
 
-.button{
-  width: 66px;
-  padding: 20px;
-  margin: 0 3px;
-  border: 2px solid black;
-  border-radius: 9px;
-  cursor: pointer;
 }
-
-.row{
-  margin: 8px 0;
-}
-.row input{
-  width: 291px;
+button{
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
   font-size: 20px;
-    margin: 0;
-    padding: 10px 0px;
-    border: 2px solid black;
-    border-radius: 5px;
+ box-shadow: -8px -8px 15px  rgba(255,255,255,0.1);
+ cursor: pointer;
+}
+
+#equl{
+  background-color: orange;
+}
+#opt{
+color: #6dee0a;
+}
+#red{
+  color: red;
 }
